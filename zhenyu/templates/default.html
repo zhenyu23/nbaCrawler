@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body_content %}
+    {% for item in zhenyu_list %}
+        <br><br>
+        <a>name:{{ item.name }}</a><br>
+        <a>sex:{{ item.sex }}</a><br>
+        <a>age:{{ item.info }}</a><br>
+    {% endfor %}
+{% endblock %}
